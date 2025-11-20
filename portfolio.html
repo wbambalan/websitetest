@@ -16,13 +16,11 @@
         nav a { text-decoration: none; color: #e0e0e0; font-weight: bold; transition: color 0.3s; }
         nav a:hover { color: #00d4ff; }
         main { flex: 1; padding: 2rem; background: #0f0f0f; }
-        .card { background: #2c2c2c; border: 1px solid #00d4ff; color: #e0e0e0; transition: transform 0.3s, box-shadow 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0, 212, 255, 0.4); }
-        .card-img-top { width: 100%; height: 200px; object-fit: cover; }
-        .btn-primary { background-color: #00d4ff; border-color: #00d4ff; color: #0f0f0f; }
-        .btn-primary:hover { background-color: #0099cc; border-color: #0099cc; }
         footer { background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%); color: #00d4ff; text-align: center; padding: 1rem; box-shadow: 0 -4px 8px rgba(0, 212, 255, 0.3); }
         @media (max-width: 768px) { nav ul { flex-direction: column; align-items: center; } nav li { margin: 0.5rem 0; } main { padding: 1rem; } }
+        .image-grid { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+        .image-grid img { max-width: 300px; height: auto; border: 1px solid #00d4ff; border-radius: 8px; transition: transform 0.3s; }
+        .image-grid img:hover { transform: scale(1.05); }
     </style>
 </head>
 <body>
@@ -38,26 +36,27 @@
         </ul>
     </nav>
     <main class="container">
-        <h2 style="color: #00d4ff; text-align: center;">My Work</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4" id="graphics">
-                <div class="card h-100">
-                    <img src="https://pbs.twimg.com/media/Gnx7OSdW8AA0TF8?format=jpg&name=large" class="card-img-top" alt="Graphics Design">
-                    <div class="card-body">
-                        <h5 class="card-title">Graphics Design</h5>
-                        <p class="card-text">Detailed examples of logos and branding projects.</p>
-                    </div>
-                </div>
+        <section id="graphics">
+            <h2 style="color: #00d4ff; text-align: center;">Graphics Design</h2>
+            <div class="image-grid">
+                <img src="https://pbs.twimg.com/media/Gnx7OSdW8AA0TF8?format=jpg&name=large" alt="Graphics Design Example 1">
             </div>
-            <div class="col-md-4 mb-4" id="art">
-                <div class="card h-100">
-                    <img src="https://pbs.twimg.com/media/GvtGBNObsAUxPQy?format=jpg&name=small" class="card-img-top" alt="Digital Art">
-                    <div class="card-body">
-                        <h5 class="card-title">Digital Art</h5>
-                        <p class="card-text">A collection of my digital artworks and illustrations.</p>
-                    </div>
-                </div>
+        </section>
+        <section id="art">
+            <h2 style="color: #00d4ff; text-align: center;">Digital Art</h2>
+            <div class="image-grid">
+                <img src="https://pbs.twimg.com/media/GvtGBNObsAUxPQy?format=jpg&name=small" alt="Digital Art Example 1">
             </div>
-            <div class="col-md-4 mb-4" id="video">
-                <div class="card h-100">
-                    <img src="https://scontent.fmnl33-4.fna.fbcdn.net/v/t39.30808-6/530868556_116147696
+        </section>
+        <section id="video">
+            <h2 style="color: #00d4ff; text-align: center;">Video Editing</h2>
+            <div class="image-grid">
+                <img src="https://scontent.fmnl33-4.fna.fbcdn.net/v/t39.30808-6/530868556_1161476969339139_105036347251667832_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeHcn2XJbzr_W7En6YiVDsu7h6vAtzJDaIGHq8C3MkNogS001gxJcAQHspyW7ATX2RrN1FdjNJCy9fc8wd5vltcU&_nc_ohc=b_Bb96fY3yYQ7kNvwH3Kjk9&_nc_oc=AdlcFGn8oXGdqd7HsSOnj9Zu0onYbg8mStj4YZgeIp3aWX2xreSThcNx79OJjyMH2hw&_nc_zt=23&_nc_ht=scontent.fmnl33-4.fna&_nc_gid=DbZOcYGo72bMTfo2VNjVKg&oh=00_AfhYQZmPun4eUGz8NWMzr7-gMbtlC6z-_WJt_eTTqbpcFg&oe=691BB7D6" alt="Video Editing Example 1">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Vorthecz Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
